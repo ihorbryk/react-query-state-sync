@@ -2,13 +2,16 @@
   "name": "react-query-state-sync",
   "version": "1.1.2",
   "description": "React hook for store parametrs synced with query params",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",  "types": "dist/index.d.ts",
   "files": [
-    "/dist"
+    "/lib"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
   "repository": {
     "type": "git",
