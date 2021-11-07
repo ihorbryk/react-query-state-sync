@@ -1,0 +1,25 @@
+{
+  "name": "react-query-state-sync",
+  "version": "1.0.0",
+  "description": "React hook for store parametrs synced with query params",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihorbryk/react-query-state-sync.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "query",
+    "params"
+  ],
+  "author": "ihorbryk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihorbryk/react-query-state-sync/issues"
+  },
+  "homepage": "https://github.com/ihorbryk/react-query-state-sync#readme"
+}
