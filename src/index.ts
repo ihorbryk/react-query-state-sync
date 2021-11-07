@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState, useEffect } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 
 type SettersKeys<Type> = {
@@ -25,7 +25,7 @@ export const useQueryStateSync = <T extends Record<keyof T, string>>(
     }
   });
 
-  const [queryParams, setQueryParams] = React.useState(parameters);
+  const [queryParams, setQueryParams] = useState(parameters);
 
   (Object.keys(parameters) as Array<keyof T>).forEach((key: keyof T) => {
     if (
@@ -43,7 +43,7 @@ export const useQueryStateSync = <T extends Record<keyof T, string>>(
 
   const nextQString = query.toString();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (currentQString !== "?" + nextQString) {
       history.push({ search: query.toString() });
     }
