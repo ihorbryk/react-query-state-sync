@@ -1,4 +1,4 @@
-# REACT QEUERY STATE SYNC
+# REACT QUERY STATE SYNC
 
 This package provide hook for manage your variables needed store in state and synced with query params.
 
